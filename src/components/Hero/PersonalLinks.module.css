@@ -1,0 +1,19 @@
+.icons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  fill: white;
+  width: 50px;
+  height: 50px;
+  padding: 1rem 0;
+  position: relative;
+  top: 0;
+  transition: all 0.25s ease-out;
+}
+
+.icons:hover {
+  fill: #bc6ff1;
+  top: -0.5rem;
+}

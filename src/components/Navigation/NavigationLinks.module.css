@@ -1,0 +1,22 @@
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 2rem;
+  transition: all 0.25s ease-out;
+}
+
+.nav-link:hover {
+  color: #bc6ff1;
+}
+
+.resume {
+  border: 1px solid #bc6ff1;
+  border-radius: 5px;
+  color: #bc6ff1;
+  padding: 0.5rem 1rem;
+  transition: all 0.25s ease-out;
+}
+
+.resume:hover {
+  background-color: #bd6ff159;
+}

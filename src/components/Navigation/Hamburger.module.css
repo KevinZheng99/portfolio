@@ -1,0 +1,17 @@
+.hamburger {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-right: 2rem;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger-line {
+  height: 3px;
+  width: 2rem;
+  background-color: white;
+}

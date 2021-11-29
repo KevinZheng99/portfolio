@@ -8,17 +8,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.navigation a {
-  color: white;
-  text-decoration: none;
-  margin-right: 2rem;
-  transition: all 0.25s ease-out;
-}
-
-.navigation a:hover {
-  color: #bc6ff1;
+  z-index: 10;
 }
 
 .navigation .logo {
@@ -31,21 +21,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   transition: all 0.25s ease-out;
 }
 
 .navigation .logo:hover {
-  background-color: #bd6ff159;
-}
-
-.navigation .resume {
-  border: 1px solid #bc6ff1;
-  border-radius: 5px;
-  color: #bc6ff1;
-  padding: 0.5rem 1rem;
-  transition: all 0.25s ease-out;
-}
-
-.navigation .resume:hover {
   background-color: #bd6ff159;
 }
