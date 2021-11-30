@@ -1,11 +1,12 @@
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 100%;
   width: 50%;
   height: 100vh;
-  background-color: #400062;
+  background-color: #490070;
   transition: all 0.25s ease-out;
+  z-index: 30;
 }
 
 .menu.open {

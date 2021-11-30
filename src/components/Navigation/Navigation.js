@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 
 import Hamburger from "./Hamburger";
 import NavigationLinks from "./NavigationLinks";
 import Menu from "./Menu";
+import Overlay from "../UI/Overlay";
 import useWindowWidth from "../../hooks/use-window-width";
 import classes from "./Navigation.module.css";
 
@@ -10,9 +11,9 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(true);
   const windowWidth = useWindowWidth();
 
-  const changeHamburgerHandler = () => {
+  function changeHamburgerHandler() {
     setIsOpen(!isOpen);
-  };
+  }
 
   return (
     <nav className={classes.navigation}>
@@ -24,6 +25,9 @@ export default function Navigation() {
         <Hamburger onChangeHamburger={changeHamburgerHandler} isOpen={isOpen} />
       )}
       {windowWidth <= 768 && <Menu isOpen={!isOpen} />}
+      {windowWidth <= 768 && (
+        <Overlay isOpen={!isOpen} onCloseMenu={changeHamburgerHandler} />
+      )}
     </nav>
   );
 }
