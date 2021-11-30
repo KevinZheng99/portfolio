@@ -1,9 +1,9 @@
 .hamburger {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-right: 2rem;
+  position: absolute;
+  height: 30px;
+  width: 35px;
+  top: 40%;
+  left: 90%;
 }
 
 .hamburger:hover {
@@ -13,5 +13,29 @@
 .hamburger-line {
   height: 3px;
   width: 2rem;
+  position: absolute;
   background-color: white;
+  transition: all 0.25s ease-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+.hamburger span:nth-child(2) {
+  top: 10px;
+}
+.hamburger span:nth-child(3) {
+  top: 20px;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
 }

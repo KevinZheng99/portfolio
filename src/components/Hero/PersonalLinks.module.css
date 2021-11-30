@@ -17,3 +17,12 @@
   fill: #bc6ff1;
   top: -0.5rem;
 }
+
+@media (max-width: 768px) {
+  .icons-container {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
