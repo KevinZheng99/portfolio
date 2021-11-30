@@ -1,18 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
 import classes from "./Hamburger.module.css";
 
-export default function Hamburger() {
-  const [isHamburger, setIsHamburger] = useState(true);
-
-  const changeHamburgerHandler = () => {
-    setIsHamburger(!isHamburger);
-  };
-
+export default function Hamburger(props) {
   return (
     <div
-      className={`${classes.hamburger} ${!isHamburger && classes.open}`}
-      onClick={changeHamburgerHandler}
+      className={`${classes.hamburger} ${!props.isOpen && classes.open}`}
+      onClick={props.onChangeHamburger}
     >
       <span className={classes["hamburger-line"]}></span>
       <span className={classes["hamburger-line"]}></span>

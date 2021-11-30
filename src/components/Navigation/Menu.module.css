@@ -1,0 +1,49 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 50%;
+  height: 100vh;
+  background-color: #400062;
+  transition: all 0.25s ease-out;
+}
+
+.menu.open {
+  left: 50%;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 80%;
+  width: 100%;
+  list-style: none;
+  font-size: 1.5rem;
+  position: relative; /* Helps center the links for the menu*/
+  right: 2.5rem; /* Offsets the links to center it */
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+}
+
+.menu-link:hover {
+  color: #bc6ff1;
+}
+
+.resume {
+  border: 1px solid #bc6ff1;
+  border-radius: 5px;
+  color: #bc6ff1;
+  padding: 0.75rem 2.25rem;
+  transition: all 0.25s ease-out;
+}
+
+.resume:hover {
+  background-color: #bd6ff159;
+}

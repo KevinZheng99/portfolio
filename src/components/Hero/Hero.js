@@ -5,7 +5,7 @@ import useWindowWidth from "../../hooks/use-window-width";
 import classes from "./Hero.module.css";
 
 export default function Hero() {
-  const width = useWindowWidth();
+  const windowWidth = useWindowWidth();
 
   return (
     <div id="hero" className={classes.hero}>
@@ -16,9 +16,9 @@ export default function Hero() {
           I'm a front-end developer based in Orlando, FL. Contact me to create
           something special together.
         </div>
-        {width <= 768 && <PersonalLinks />}
+        {windowWidth <= 768 && <PersonalLinks />}
       </div>
-      {width > 768 && <PersonalLinks />}
+      {windowWidth > 768 && <PersonalLinks />}
     </div>
   );
 }
