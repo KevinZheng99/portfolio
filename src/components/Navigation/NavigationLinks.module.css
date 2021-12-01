@@ -1,5 +1,6 @@
 .links-container {
   display: flex;
+  list-style-type: none;
 }
 
 .nav-link {

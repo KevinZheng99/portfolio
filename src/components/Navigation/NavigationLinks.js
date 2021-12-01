@@ -6,13 +6,13 @@ export default function NavigationLinks() {
   return (
     <ul className={classes["links-container"]}>
       <li>
-        <a className={classes["nav-link"]} href="/">
+        <a className={classes["nav-link"]} href="#about">
           About
         </a>
       </li>
       <li>
-        <a className={classes["nav-link"]} href="/">
-          Work
+        <a className={classes["nav-link"]} href="#projects">
+          Projects
         </a>
       </li>
       <li>

@@ -7,13 +7,21 @@ export default function Menu(props) {
     <nav className={`${classes.menu} ${props.isOpen && classes.open}`}>
       <ul>
         <li>
-          <a className={classes["menu-link"]} href="/">
+          <a
+            className={classes["menu-link"]}
+            href="#about"
+            onClick={props.onCloseMenu}
+          >
             About
           </a>
         </li>
         <li>
-          <a className={classes["menu-link"]} href="/">
-            Work
+          <a
+            className={classes["menu-link"]}
+            href="#projects"
+            onClick={props.onCloseMenu}
+          >
+            Projects
           </a>
         </li>
         <li>

@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 
 import Hamburger from "./Hamburger";
 import NavigationLinks from "./NavigationLinks";
@@ -24,7 +24,9 @@ export default function Navigation() {
       {windowWidth <= 768 && (
         <Hamburger onChangeHamburger={changeHamburgerHandler} isOpen={isOpen} />
       )}
-      {windowWidth <= 768 && <Menu isOpen={!isOpen} />}
+      {windowWidth <= 768 && (
+        <Menu isOpen={!isOpen} onCloseMenu={changeHamburgerHandler} />
+      )}
       {windowWidth <= 768 && (
         <Overlay isOpen={!isOpen} onCloseMenu={changeHamburgerHandler} />
       )}
