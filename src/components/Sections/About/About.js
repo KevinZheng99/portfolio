@@ -16,10 +16,9 @@ export default function About() {
         <p>
           Going into my college career I knew that I wanted to major in Computer
           Science. I wanted to become like those YouTubers that built games by
-          themselves. That's why for my senior design project I selected a
-          sponsor that wanted to create a video game. I loved the process of
-          making games, but during this time I started to take more of a liking
-          to frontend development.
+          themselves. That's why creating something visually appealing was what
+          I wanted to do as a programmer. For that reason I started dive deeper
+          into frontend development.
         </p>
         <p>
           Fast-forward to today after graduating college I started to study more

@@ -1,7 +1,7 @@
 .menu {
   position: fixed;
   top: 0;
-  left: 100%;
+  left: 110%;
   width: 50%;
   height: 100vh;
   background-color: #490070;
@@ -47,4 +47,11 @@
 
 .resume:hover {
   background-color: #bd6ff159;
+}
+
+@media (max-width: 425px) {
+  .menu.open {
+    left: 25%;
+    width: 75%;
+  }
 }

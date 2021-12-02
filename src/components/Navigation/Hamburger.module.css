@@ -40,3 +40,9 @@
   transform: rotate(-45deg);
   top: 10px;
 }
+
+@media (max-width: 425px) {
+  .hamburger {
+    left: 85%;
+  }
+}
