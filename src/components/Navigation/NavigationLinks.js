@@ -18,7 +18,7 @@ export default function NavigationLinks() {
       <li>
         <a
           className={`${classes.resume} ${classes["nav-link"]}`}
-          href="https://drive.google.com/file/d/1JpjkDmEMNrheMZIcrYN76h6R1VkKq1lf/view"
+          href="https://drive.google.com/file/d/1JpjkDmEMNrheMZIcrYN76h6R1VkKq1lf/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
