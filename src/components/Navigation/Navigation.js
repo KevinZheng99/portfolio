@@ -17,7 +17,7 @@ export default function Navigation() {
 
   return (
     <nav className={classes.navigation}>
-      <a className={classes.logo} href="/">
+      <a className={classes.logo} href="#hero">
         KZ
       </a>
       {windowWidth > 768 && <NavigationLinks />}
