@@ -1,5 +1,6 @@
 import { useState, useLayoutEffect } from "react";
 
+// Custom hook to find the width of the window
 export default function useWindowWidth() {
   const [width, setWidth] = useState(window.innerWidth);
 

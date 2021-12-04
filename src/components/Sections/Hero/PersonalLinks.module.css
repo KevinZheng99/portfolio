@@ -18,6 +18,8 @@
   top: -0.5rem;
 }
 
+/* Media Queries */
+
 @media (max-width: 768px) {
   .icons-container {
     flex-direction: row;

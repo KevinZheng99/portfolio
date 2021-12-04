@@ -1,3 +1,5 @@
+/* Individual container styles for each project */
+
 .container {
   background-color: #383838;
   border-radius: 5px;
@@ -7,6 +9,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin-bottom: 3rem;
   text-align: center;
   transition: all 0.25s ease-out;
 }
@@ -15,6 +18,12 @@
   color: #bc6ff1;
   font-size: 1.25rem;
 }
+
+img {
+  width: 50%;
+}
+
+/* Buttons' Styles */
 
 .buttons-container {
   display: flex;
@@ -46,13 +55,7 @@
   filter: brightness(100%);
 }
 
-img {
-  width: 50%;
-}
-
-.container {
-  margin-bottom: 3rem;
-}
+/* Media Queries */
 
 @media (max-width: 1280px) {
   .button {

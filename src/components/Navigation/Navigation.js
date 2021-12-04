@@ -8,7 +8,7 @@ import useWindowWidth from "../../hooks/use-window-width";
 import classes from "./Navigation.module.css";
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false); // Checks if the hamburger menu is open
   const windowWidth = useWindowWidth();
 
   function changeHamburgerHandler() {
@@ -25,10 +25,10 @@ export default function Navigation() {
         <Hamburger onChangeHamburger={changeHamburgerHandler} isOpen={isOpen} />
       )}
       {windowWidth <= 768 && (
-        <Menu isOpen={!isOpen} onCloseMenu={changeHamburgerHandler} />
+        <Menu isOpen={isOpen} onCloseMenu={changeHamburgerHandler} />
       )}
       {windowWidth <= 768 && (
-        <Overlay isOpen={!isOpen} onCloseMenu={changeHamburgerHandler} />
+        <Overlay isOpen={isOpen} onCloseMenu={changeHamburgerHandler} />
       )}
     </nav>
   );

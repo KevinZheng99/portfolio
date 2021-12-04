@@ -7,6 +7,7 @@ import moist from "../../../images/moist_esports.png";
 import crunchyroll from "../../../images/crunchyroll.png";
 import computron from "../../../images/computron.png";
 
+// Information in an array of object for the project container
 const projectsArray = [
   {
     image: computron,

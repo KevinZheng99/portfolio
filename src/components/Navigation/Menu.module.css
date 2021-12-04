@@ -1,7 +1,7 @@
 .menu {
   position: fixed;
   top: 0;
-  left: 110%;
+  left: 110%; /* Positions the menu out of the screen */
   width: 50%;
   height: 100vh;
   background-color: #490070;
@@ -49,6 +49,7 @@
   background-color: #bd6ff159;
 }
 
+/* Menu width changes for mobile width */
 @media (max-width: 425px) {
   .menu.open {
     left: 25%;
